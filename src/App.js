@@ -2,7 +2,7 @@ import "./App.css";
 import MyImage from "../src/image/nwachukwu.png";
 import SlackImage from "../src/image/slack.png";
 import GithubImage from "../src/image/icons8-github-30.png";
-import EarthLogo from './image/earthlogo.png'
+import EarthLogo from "./image/earthlogo.png";
 
 function App() {
   return (
@@ -14,7 +14,8 @@ function App() {
           <span id="twitter">Nwachukwu Goodness</span>
           <span id="slack">Nwachukwu Goodness</span>
         </div>
-        <ul className="links">
+
+        <ul className="links-container">
           <li>
             <a href="">Twitter link</a>
           </li>
@@ -34,20 +35,21 @@ function App() {
             <a href="">Design BookS</a>
           </li>
         </ul>
-        <div className="icons"></div>
-        <img src={GithubImage} id="github_img" alt="github-img" />
-        <img src={SlackImage} id="slack_img" alt="slack-img" />
-      <footer>
-        <div className="zuri-internship">
-          Zuri <span></span>Internship
+
+        <div className="icons-container">
+          <img src={SlackImage} id="slack_img" alt="slack-img" />
+          <img src={GithubImage} id="github_img" alt="github-img" />
         </div>
+        <footer>
+          <div className="zuri-internship">
+            Zuri <span></span>Internship
+          </div>
           <div>HNG Internship 9 frontEnd Task</div>
           <div>
-            <img src={EarthLogo} id="eath_logo" alt="logo"/>
+            <img src={EarthLogo} id="eath_logo" alt="logo" />
             <span>INGRESSIVE FOR GOOD</span>
           </div>
-
-      </footer>
+        </footer>
       </div>
     </>
   );
