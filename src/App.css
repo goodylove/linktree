@@ -7,9 +7,10 @@
 }
 :root {
   ---textColor: #000;
-  ---mainColor: rgb(196, 19, 19);
-  ---lightColor: #ffffff;
+  ---mainColor: white;
+  ---lightColor: #ece7e7;
   ---textColor2: rgb(180, 179, 179);
+  ---dotColor: red;
 }
 body {
   display: flex;
@@ -17,7 +18,7 @@ body {
   align-items: center;
   width: 100%;
 
-  background-color: var(---lightColor);
+  background-color: var(---mainColor);
 }
 .container {
   display: flex;
@@ -44,14 +45,39 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1.2rem;
+  width: 95%;
+}
+button {
+  width: 90%;
+  padding: 30px;
+  /* height: 60px; */
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: var(---lightColor);
+}
+
+.links-container li a {
+  color: var(---textColor);
+  font-size: 16px;
+}
+#twitter {
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+.links-container li {
+  width: inherit;
+  justify-content: center;
+  display: flex;
 }
 .icons-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  height: 181px;
+  height: 100px;
 }
 #slack_img {
   height: 23px;
@@ -71,11 +97,11 @@ body {
 #dot-red {
   display: flex;
   align-items: center;
+  background-color: var(---dotColor);
 
   height: 5px;
   width: 5px;
   border-radius: 50px;
-  background-color: var(---mainColor);
   color: var(---mainColor);
 }
 .hng {
@@ -116,6 +142,33 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: normal;
+  justify-content: center;
   width: 100%;
+}
+.last-con {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+@media only screen and (min-width: 500px) {
+  .last-con {
+    width: 100%;
+    display: flex;
+
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 20px;
+    align-items: center;
+  }
+  #line-con span {
+    width: 80%;
+    height: 1px;
+    font-weight: 100;
+    background-color: var(---textColor2);
+  }
+  .links-container li :hover {
+    background-color: var(---textColor2);
+  }
 }

@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <div className="container">
+        <div></div>
         <div className="img-container">
           <img src={MyImage} id="profile_img" alt="profile-img" />
 
@@ -22,18 +23,17 @@ function App() {
             </button>
           </li>
           <li>
-            <button>
-              <a href="">Zuri Team</a>
+            <button id="btn_zuri">
+              <a href="https://training.zuri.team/">Zuri Team</a>
             </button>
           </li>
           <li>
-            <button>
-              {}
-              <a href="">Zuri BookS</a>
+            <button id="books">
+              <a href="http://books.zuri.team ">Zuri BookS</a>
             </button>
           </li>
           <li>
-            <button>
+            <button id="book__python">
               <a href="">Python Books</a>
             </button>
           </li>
@@ -58,16 +58,17 @@ function App() {
         <span></span>
       </div>
       <footer>
-        <div className="zuri-internship">
-          Zuri <span id="dot-red"></span>Internship
-        </div>
-        <div className="hng">HNG Internship 9 frontEnd Task</div>
-        <div className="logo-container">
-          <img src={EarthLogo} id="eath_logo" alt="logo" />
-          <div className="ingressive-con">
-            {" "}
-            <span>INGRESSIVE </span>
-            <span> FOR GOOD</span>
+        <div className="last-con">
+          <div className="zuri-internship">
+            Zuri <span id="dot-red"></span>Internship
+          </div>
+          <div className="hng">HNG Internship 9 frontEnd Task</div>
+          <div className="logo-container">
+            <img src={EarthLogo} id="eath_logo" alt="logo" />
+            <div className="ingressive-con">
+              <span>INGRESSIVE </span>
+              <span> FOR GOOD</span>
+            </div>
           </div>
         </div>
       </footer>
