@@ -5,16 +5,20 @@
 }
 :root {
   ---mainColor: rgb(194, 88, 88);
+  ---lightColor:#ffffff;
 }
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: var(---mainColor);
+  background-color: var(---lightColor);
 }
 #profile_img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+#slack {
+  display: none;
 }
