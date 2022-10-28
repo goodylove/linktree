@@ -11,9 +11,13 @@ function App() {
     <>
       <div className="container">
         <div className="dot-container">
-          <div className="three-con">
-            <BsThreeDots fontSize={"16px"} className="dot-component" />
-            <RiShareForwardLine  className="forward-component"/>
+          <div className="three-dot-icon-wrapper">
+            <div className="three-con">
+              <BsThreeDots fontSize={"16px"} className="dot-component" />
+              <RiShareForwardLine className="forward-component" />
+            </div>
+
+            <div className="sharelink-con">share link</div>
           </div>
         </div>
         <div className="img-container">
@@ -57,7 +61,7 @@ function App() {
           </li>
           <li>
             <button id="book__design">
-              <a href="https://books.zuri.team/design-rules">Design BookS</a>
+              <a href="https://books.zuri.team/design-rules">Design Books</a>
             </button>
           </li>
         </ul>

@@ -21,6 +21,35 @@ body {
 
   background-color: var(---mainColor);
 }
+.sharelink-con {
+  background-color: var(---textColor);
+  border-radius: 4px;
+  color: var(---lightColor);
+  padding: 6px;
+  margin: 0 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  font-size: 13px;
+  width: 67px;
+  transform: translate(calc(-100% - 20px));
+}
+.sharelink-con::after {
+  content: "";
+  display: block;
+  top: 50%;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background: var(---textColor);
+  position: absolute;
+  transform: translateY(-50%) translateX(50%) rotate(45deg);
+  z-index: -1;
+}
+.three-dot-icon-wrapper {
+  position: relative;
+}
 .three-con {
   width: 30px;
   height: 30px;
@@ -60,6 +89,8 @@ body {
   top: 130px;
 }
 #profile_img {
+  object-fit: cover;
+  object-position: top;
   width: 90px;
   height: 90px;
   border-radius: 50px;
@@ -196,6 +227,9 @@ footer {
   .forward-component {
     display: block;
     font-size: 20px;
+  }
+  .three-con:hover + .sharelink-con {
+    opacity: 1;
   }
   .dot-component {
     font-size: 18px;
