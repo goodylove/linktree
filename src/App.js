@@ -17,22 +17,35 @@ function App() {
 
         <ul className="links-container">
           <li>
-            <a href="">Twitter link</a>
+            <button>
+              <a href="">Twitter link</a>
+            </button>
           </li>
           <li>
-            <a href="">Zuri Team</a>
+            <button>
+              <a href="">Zuri Team</a>
+            </button>
           </li>
           <li>
-            <a href="">Zuri BookS</a>
+            <button>
+              {}
+              <a href="">Zuri BookS</a>
+            </button>
           </li>
           <li>
-            <a href="">Python Books</a>
+            <button>
+              <a href="">Python Books</a>
+            </button>
           </li>
           <li>
-            <a href="">Background Check for Coders</a>
+            <button>
+              <a href="">Background Check for Coders</a>
+            </button>
           </li>
           <li>
-            <a href="">Design BookS</a>
+            <button>
+              <a href="">Design BookS</a>
+            </button>
           </li>
         </ul>
 
@@ -40,17 +53,24 @@ function App() {
           <img src={SlackImage} id="slack_img" alt="slack-img" />
           <img src={GithubImage} id="github_img" alt="github-img" />
         </div>
-        <footer>
-          <div className="zuri-internship">
-            Zuri <span></span>Internship
-          </div>
-          <div>HNG Internship 9 frontEnd Task</div>
-          <div>
-            <img src={EarthLogo} id="eath_logo" alt="logo" />
-            <span>INGRESSIVE FOR GOOD</span>
-          </div>
-        </footer>
       </div>
+      <div id="line-con">
+        <span></span>
+      </div>
+      <footer>
+        <div className="zuri-internship">
+          Zuri <span id="dot-red"></span>Internship
+        </div>
+        <div className="hng">HNG Internship 9 frontEnd Task</div>
+        <div className="logo-container">
+          <img src={EarthLogo} id="eath_logo" alt="logo" />
+          <div className="ingressive-con">
+            {" "}
+            <span>INGRESSIVE </span>
+            <span> FOR GOOD</span>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
