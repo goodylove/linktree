@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  cursor: pointer;
 }
 :root {
   ---textColor: #000;
@@ -23,6 +24,7 @@ body {
 .three-con {
   width: 30px;
   height: 30px;
+  font-size: smaller;
   border-radius: 50%;
   outline-style: dotted;
   outline-color: var(---textColor2);
@@ -52,6 +54,10 @@ body {
   flex-direction: column;
   padding: 20px;
   gap: 1.5rem;
+}
+.camera-co {
+  position: absolute;
+  top: 130px;
 }
 #profile_img {
   width: 90px;
@@ -171,7 +177,43 @@ footer {
 
   align-items: flex-start;
 }
+.camera-co {
+  display: block;
+  opacity: 0;
+}
+.profile-con {
+  display: flex;
+  justify-content: center;
+}
+.forward-component {
+  display: none;
+  font-size: 20px;
+}
+.dot-component {
+  font-size: 18px;
+}
 @media only screen and (min-width: 500px) {
+  .forward-component {
+    display: block;
+    font-size: 20px;
+  }
+  .dot-component {
+    font-size: 18px;
+    display: none;
+  }
+
+  .dot-container {
+    width: 50%;
+  }
+  .profile-con:hover {
+    opacity: 0.8;
+  }
+  .camera-co:hover {
+    opacity: 1;
+  }
+  /* #profile_img:hover {
+    opacity: 1;
+  } */
   .last-con {
     width: 100%;
     display: flex;

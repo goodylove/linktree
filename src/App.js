@@ -3,7 +3,8 @@ import MyImage from "../src/image/nwachukwu.png";
 import SlackImage from "../src/image/slack.png";
 import GithubImage from "../src/image/icons8-github-30.png";
 import EarthLogo from "./image/earthlogo.png";
-import { BsThreeDots } from "react-icons/bs";
+import { BsThreeDots, BsCamera } from "react-icons/bs";
+import { RiShareForwardLine } from "react-icons/ri";
 
 function App() {
   return (
@@ -11,12 +12,17 @@ function App() {
       <div className="container">
         <div className="dot-container">
           <div className="three-con">
-            <BsThreeDots fontSize={"16px"} />
+            <BsThreeDots fontSize={"16px"} className="dot-component" />
+            <RiShareForwardLine  className="forward-component"/>
           </div>
         </div>
         <div className="img-container">
-          <img src={MyImage} id="profile_img" alt="profile-img" />
-
+          <div className="profile-con">
+            <div className="camera-co">
+              <BsCamera style={{ color: "white", fontSize: "20px" }} />
+            </div>
+            <img src={MyImage} id="profile_img" alt="profile-img" />
+          </div>
           <span id="twitter">Nwachukwu Goodness</span>
           <span id="slack">Nwachukwu Goodness</span>
         </div>
