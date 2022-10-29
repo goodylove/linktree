@@ -1,0 +1,36 @@
+.Tooltip {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translate(-50%, -66.5px);
+  z-index: 1;
+  background-color: var(---textColor);
+  color: var(---lightColor);
+  width: 300px;
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.Tooltip::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: var(---textColor);
+}
+
+.Tooltip p.title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.Tooltip.show {
+  opacity: 1;
+  transition: 0.5s;
+  transform: translate(-50%, 0);
+}
