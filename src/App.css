@@ -114,13 +114,17 @@ body {
 }
 button {
   width: 90%;
-  padding: 30px;
   /* height: 60px; */
   outline: none;
   border: none;
   border-radius: 8px;
   background-color: var(---lightColor);
+  
+}
 
+button a {
+  padding: 30px;
+  display: block;
   cursor: pointer;
 }
 
