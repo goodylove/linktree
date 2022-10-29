@@ -11,6 +11,7 @@
   padding: 10px;
   border-radius: 8px;
   opacity: 0;
+  transition: 0.5s;
 }
 .Tooltip::after {
   content: "";
@@ -29,5 +30,6 @@
 }
 
 .Tooltip.show {
-    opacity: 1;
+  opacity: 1;
+  transition: 0.5s;
 }
