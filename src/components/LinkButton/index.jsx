@@ -3,7 +3,7 @@ import Tooltip from "../Tooltip";
 import "./LinkButton.css";
 
 const LinkButton = ({ children, id, href, tooltipTitle, tooltipSubText }) => {
-  const [showTooltip, setShowTooltip] = useState(true);
+  const [showTooltip, setShowTooltip] = useState(false);
 
   const handleShowTooltip = () => {
     setShowTooltip(true);
