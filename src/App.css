@@ -113,20 +113,6 @@ body {
   width: 95%;
 }
 
-button {
-  width: 90%;
-  outline: none;
-  border: none;
-  border-radius: 8px;
-  background-color: var(---lightColor);
-}
-
-button a {
-  padding: 24px 32px 24px 32px;
-  display: block;
-  cursor: pointer;
-}
-
 .links-container li a {
   color: var(---textColor);
   font-size: 16px;
@@ -279,5 +265,6 @@ footer {
   }
   .links-container li button a:hover {
     background-color: var(---textColor2);
+    border-radius: 8px;
   }
 }

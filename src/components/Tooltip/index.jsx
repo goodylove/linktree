@@ -1,8 +1,10 @@
+import "./Tooltip.css";
+
 const Tooltip = ({ title, subText }) => {
-    return <div className="tooltip-subtext">
+    return ((title || subText) && <div className="Tooltip">
         {title ? <p className="title">{title}</p> : null}
         {subText && <p className="subText">{subText}</p>}
-    </div>
+    </div>)
 }
 
 export default Tooltip;

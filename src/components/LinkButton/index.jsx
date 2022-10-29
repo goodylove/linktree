@@ -1,14 +1,15 @@
-import Tooltip from "./Tooltip.jsx";
+import Tooltip from "../Tooltip";
+import "./LinkButton.css";
 
 const LinkButton = ({ children, id, href, tooltipTitle, tooltipSubText }) => {
-  return (
-    <>
+ return (
+    <div className="LinkButton">
       <button id={id}>
         <a href={href}>{children}</a>
       </button>
 
       <Tooltip title={tooltipTitle} subText={tooltipSubText} />
-    </>
+    </div>
   );
 };
 
