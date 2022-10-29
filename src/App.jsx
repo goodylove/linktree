@@ -5,6 +5,7 @@ import GithubImage from "../src/image/icons8-github-30.png";
 import EarthLogo from "./image/earthlogo.png";
 import { BsThreeDots, BsCamera } from "react-icons/bs";
 import { RiShareForwardLine } from "react-icons/ri";
+import LinkButton from "./components/LinkButton";
 
 function App() {
   return (
@@ -27,42 +28,30 @@ function App() {
             </div>
             <img src={MyImage} id="profile_img" alt="profile-img" />
           </div>
-          <span id="twitter">Nwachukwu Goodness</span>
+          <span id="twitter">@goodylove474</span>
           <span id="slack">Nwachukwu Goodness</span>
         </div>
 
         <ul className="links-container">
           <li>
-            <button>
-              <a href="">Twitter link</a>
-            </button>
+            <LinkButton href="https://twitter.com/goodylove474">Twitter link</LinkButton>
           </li>
           <li>
-            <button id="btn_zuri">
-              <a href="https://training.zuri.team/">Zuri Team</a>
-            </button>
+            <LinkButton id="btn_zuri" href="https://training.zuri.team/">Zuri Team</LinkButton>
           </li>
           <li>
-            <button id="books">
-              <a href="http://books.zuri.team ">Zuri BookS</a>
-            </button>
+            <LinkButton id="books" href="http://books.zuri.team ">Zuri BookS</LinkButton>
           </li>
           <li>
-            <button id="book__python">
-              <a href="https://books.zuri.team/">Python Books</a>
-            </button>
+            <LinkButton id="book__python" href="https://books.zuri.team/">Python Books</LinkButton>
           </li>
           <li>
-            <button id="pitch">
-              <a href="https://background.zuri.team/">
-                Background Check for Coders
-              </a>
-            </button>
+            <LinkButton id="pitch" href="https://background.zuri.team/">
+              Background Check for Coders
+            </LinkButton>
           </li>
           <li>
-            <button id="book__design">
-              <a href="https://books.zuri.team/design-rules">Design Books</a>
-            </button>
+            <LinkButton id="book__design" href="https://books.zuri.team/design-rules">Design Books</LinkButton>
           </li>
         </ul>
 
