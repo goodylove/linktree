@@ -37,21 +37,33 @@ function App() {
             <LinkButton href="https://twitter.com/goodylove474">Twitter link</LinkButton>
           </li>
           <li>
-            <LinkButton id="btn_zuri" href="https://training.zuri.team/">Zuri Team</LinkButton>
+            <LinkButton id="btn_zuri" href="https://training.zuri.team/" tooltipSubText="Meets the Zuri Team">Zuri Team</LinkButton>
           </li>
           <li>
-            <LinkButton id="books" href="http://books.zuri.team ">Zuri BookS</LinkButton>
+            <LinkButton id="books" href="https://books.zuri.team"
+              tooltipTitle="Zuri's Library of books" 
+              tooltipSubText="You can find all kinds of tech related books right here on the Zuri librabry, you get access to free and premium books to help you with your tech journey."
+            >
+              Zuri Books
+            </LinkButton>
           </li>
           <li>
-            <LinkButton id="book__python" href="https://books.zuri.team/">Python Books</LinkButton>
+            <LinkButton 
+              id="book__python" 
+              href="https://books.zuri.team/python-for-beginners?ref_id=nwachukwugoodness"
+              tooltipTitle="Grab a copy of the python for beginners book"
+              tooltipSubText="Are you new to python? Grab a copy of my beginner's friendly book on python."
+            >Python Books</LinkButton>
           </li>
           <li>
-            <LinkButton id="pitch" href="https://background.zuri.team/">
+            <LinkButton id="pitch" href="https://background.zuri.team/"
+            tooltipSubText="Tech talent hunt is a program where you get to test your tech skills and watch others do amazing works with their skills"
+            >
               Background Check for Coders
             </LinkButton>
           </li>
           <li>
-            <LinkButton id="book__design" href="https://books.zuri.team/design-rules">Design Books</LinkButton>
+            <LinkButton id="book__design" href="https://books.zuri.team/design-rules" tooltipSubText="Get the best book money can get you on UI/UX.">Design Books</LinkButton>
           </li>
         </ul>
 
